@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+        .son{
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    margin
+    子元素的margin为什么为作用在父元素上？
+    外边距合并
+    解决方案：
+    - 为父元素定义外边框
+    - 为父元素定义padding
+    - 为父元素添加overflow：hidden;
+ -->
