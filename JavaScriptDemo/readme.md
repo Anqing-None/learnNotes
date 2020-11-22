@@ -1,0 +1,1 @@
+This folder contains some JavaScript Examples form W3school.com

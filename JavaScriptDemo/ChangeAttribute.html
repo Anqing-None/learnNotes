@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeAttribute</title>
+    <style>
+        #demo {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        #changeColor {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+
+    <script>
+            function ChangeAttr() {
+                document.getElementById("demo").id = "changeColor";
+            }
+            function Reset() {
+                document.getElementById("changeColor").id = "demo";
+            }
+    </script>
+
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button type="button" onclick="ChangeAttr()">更换颜色</button>
+    <button type="button" onclick="Reset()">Reset</button>
+
+</body>
+</html>
+
+<!-- 
+    JavaScript更换HTML元素的属性值
+    可以配合预定义CSS样式，改变元素的样式
+ -->

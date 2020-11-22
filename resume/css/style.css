@@ -54,15 +54,40 @@ body {
 
 /* ----------------------------------------------------- */
 
-.basicInfo {
+.basicInfo,
+.contact {
+    /* 居中整个基本信息栏，使水平线不会伸长到边框 */
     width: 270px;
     margin: 0 auto;
 
 }
 
-.basicInfo h1 {
+.siderTitle {
+    /* 设置基础信息标题的字体颜色和边距 */
     margin-bottom: 5px;
     color: #007acc;
     font-size: 24px;
 
+}
+
+.info {
+    /* 设置信息栏的边距 */
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.info p {
+    /* // 设值信息栏的每行信息的上下边距 */
+    margin: 5px 0px;
+}
+
+.info span {
+    display: inline-block;
+    width: 70px;
+}
+
+span.contactValue {
+    /* 邮箱等链接过长，为实现排版单独选出指定宽度 */
+    display: inline-block;
+    width: 170px;
 }

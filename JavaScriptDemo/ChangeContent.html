@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeContent</title>
+</head>
+<body>
+    <h1>修改HTML元素内容</h1>
+    <p id="demo">点击下方提交按钮并在输入框中输入你想要修改为的文本可修改本段文字</p>
+    <label for="ChangeContent">输入你想改为的文本</label>
+    <input type="text" name="" id="content">
+
+    <button type="button" onclick="var ChangeContent = document.getElementById('content').value;document.getElementById('demo').innerHTML = ChangeContent">提交</button>
+</body>
+</html>
+
+<!-- 
+    如何实现用户在文本框中输入文字，点击按钮将段落文字改变为用户输入的文本
+    实现
+    1. 用变量获取用户输入框的文字
+    2. 将该变量的值设为innerHTML的值
+ -->
