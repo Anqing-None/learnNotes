@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 body {
     background-color: #778899;
 }
 
 .container {
-    /*实现居中效果*/
+    /*实现版心居中效果*/
     margin: 0 auto;
     width: 840px;
     height: 1200px;
@@ -28,7 +34,6 @@ body {
     margin: 10px 86px 0px 86px;
     width: 118px;
     /* height: 120px; */
-
 }
 
 .avatar img {
@@ -54,12 +59,10 @@ body {
 
 /* ----------------------------------------------------- */
 
-.basicInfo,
-.contact {
+.infomation {
     /* 居中整个基本信息栏，使水平线不会伸长到边框 */
     width: 270px;
     margin: 0 auto;
-
 }
 
 .siderTitle {
@@ -71,7 +74,7 @@ body {
 }
 
 .info {
-    /* 设置信息栏的边距 */
+    /* 设置信息栏的边距 ，每一行信息块都在info中*/
     margin-left: 20px;
     font-size: 14px;
 }
@@ -81,13 +84,51 @@ body {
     margin: 5px 0px;
 }
 
-.info span {
+.infoKey {
+    /* 实现问题与值的排版，infoKey为问题，如姓名：谢安清，infokey是指“姓名：”，规定其长度使其排成一列 */
     display: inline-block;
     width: 70px;
 }
 
-span.contactValue {
-    /* 邮箱等链接过长，为实现排版单独选出指定宽度 */
+.infoValue {
+    /* infovalue时infokey的回答，如姓名：谢安清，infovalue是指谢安清 */
     display: inline-block;
     width: 170px;
+}
+
+/* span.contactValue {
+    邮箱等链接过长，为实现排版单独选出指定宽度--------更新了infokey和infovalue不再需要特殊指定
+    display: inline-block;
+    width: 170px;
+} */
+
+/* -------------------skill进度条的特殊设定-------------------------- */
+.info label {
+    /* 使文字具有相同宽度，便于控制progress与文字的间距 */
+    display: inline-block;
+    width: 67px;
+}
+
+.info progress {
+    /* 删除progress的默认样式，并对其progress bar */
+    margin-left: 25px;
+    appearance: none;
+}
+
+.info progress::-webkit-progress-value {
+    /* 针对chrome浏览器设置progress进度条的颜色 */
+    background: #007acc;
+}
+
+/* -----------------------------微信二维码位置设定------------------------ */
+.wechat img {
+    margin: 35px 0px 0px 13px;
+}
+
+
+/*------------------ side right -> detail ------------------------------*/
+.detail {
+    width: 550px;
+    height: 1200px;
+    background-color: #778899;
 }

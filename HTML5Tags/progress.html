@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+    <style>
+        progress {
+            appearance: none;
+        }
+        progress::-webkit-progress-value {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <label for="Python">Python</label>
+    <progress id="Python" value="30" max="100">30%</progress>
+</body>
+</html>
+<!-- 
+    Always add the <label> tag for best accessibility practices!
+    progress标签配合label标签一起使用增强代码的可读性。
+    progress配合Javascript实现项目的动态进程。
+    progress不适合表示磁盘所剩空间等，与meter存在区别。
+    
+    progress的默认CSS样式from Chrome:
+        1em = 16px;
+    progress {
+    -webkit-writing-mode: horizontal-tb !important;
+    appearance: progress-bar;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em;
+    width: 10em;
+    vertical-align: -0.2em;
+}
+ -->
