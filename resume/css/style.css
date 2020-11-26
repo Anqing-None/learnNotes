@@ -16,6 +16,7 @@ body {
 
 .container {
     /*实现版心居中效果*/
+    /* position: absolute; */
     margin: 0 auto;
     width: 840px;
     height: 1200px;
@@ -23,6 +24,7 @@ body {
 }
 
 .sider {
+    float: left;
     width: 290px;
     height: 1200px;
     background-color: #f5f5f5;
@@ -130,5 +132,17 @@ body {
 .detail {
     width: 550px;
     height: 1200px;
-    background-color: #778899;
+    float: right;
+}
+
+.rightSider {
+    margin: 20px 10px 20px 20px;
+}
+
+.rightSider h1 {
+    font-size: 20px;
+}
+
+.rightSider ul {
+    margin-top: 10px;
 }
