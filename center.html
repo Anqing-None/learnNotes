@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .center {
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+
+        .center p {
+            margin: 0;
+            position: absolute;
+            /* top和left的50%是基于父元素的高宽，top基于height， */
+            /* left基于width */
+            top: 50%;
+            left: 50%;
+            /* translate中50%是基于本身元素（p）的宽高， */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Centering</h2>
+    <p>In this example, we use positioning and the transform property to vertically and horizontally center the div
+        element:</p>
+
+    <div class="center">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+
+</body>
+
+<!-- 使用position和transform属性对元素进行居中显示
+涉及到了两个50%的使用，明确50%相对的对象即可掌握此方法居中的原理
+-->
+
+</html>

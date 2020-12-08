@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropdownMenu</title>
+    <style>
+        .menu {
+            /* relative的相对对象是正常流，意思是相对于正常流元素应如何排版 */
+            position: relative;
+            top: 0px;
+            width: 130px;
+            height: 40px;
+            background-color: lightblue;
+        }
+
+        .menu span {
+            display: inline-block;
+            padding: 10px 25px;
+        }
+
+        .unshowLang {
+            display: none;
+
+
+        }
+
+        .menu:hover .unshowLang {
+            display: block;
+        }
+
+        .unshowItem {
+            width: 130px;
+            height: 40px;
+            background-color: lightcoral;
+        }
+
+        .unshowItem:hover {
+            background-color: lightcyan;
+        }
+
+        .unshowItem a {
+            display: inline-block;
+            /* unshowitem宽高为180x40，a元素最大宽高为77x21 */
+            /* 设定a元素宽高配合padding使其超链接文字居中 */
+            width: 77px;
+            height: 21px;
+            padding: 9.5px 26.5px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <span>计算机语言</span>
+        <div class="unshowLang">
+            <div class="unshowItem"><a href="">C</a></div>
+            <div class="unshowItem"><a href="">Java</a></div>
+            <div class="unshowItem"><a href="">Python</a></div>
+            <div class="unshowItem"><a href="">JavaScript</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

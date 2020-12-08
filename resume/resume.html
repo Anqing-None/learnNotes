@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.15.1-web/css/all.css">
 </head>
-<body>
+
+<body contenteditable="true">
     <div class="container">
         <div class="sider clearfix">
             <div class="avatar">
@@ -17,7 +20,12 @@
                 <p>Python / Web / Learn</p>
             </div>
             <div class="basicInfo infomation">
-                <h1 class="siderTitle">基本信息</h1>
+
+
+                <h1 class="siderTitle"><i class="far fa-address-card"
+                        style="color: #007acc; display: inline; padding-right: 10px;"></i>基本信息
+                </h1>
+
                 <hr>
                 <div class="info">
                     <p><span class="infoKey">姓名：</span><span class="infoValue">谢安清</span></p>
@@ -41,7 +49,8 @@
                 <hr>
                 <div class="info">
                     <p><label for="python">Python</label><progress id="python" value="50" max="100">50%</progress></p>
-                    <p><label for="JavaScript">JavaScript</label><progress id="JavaScript" value="50" max="100">50%</progress></p>
+                    <p><label for="JavaScript">JavaScript</label><progress id="JavaScript" value="50"
+                            max="100">50%</progress></p>
                     <p><label for="css">CSS</label><progress id="css" value="50" max="100">50%</progress></p>
                     <p><label for="linux">Linux</label><progress id="linux" value="50" max="100">50%</progress></p>
                 </div>
@@ -50,9 +59,11 @@
                 <h1 class="siderTitle">技术栈</h1>
                 <hr>
                 <div class="info">
-                    <p><span class="infoKey">前端：</span><span class="infoValue">jQuery、Bootstrap4、React、Electron</span></p>
+                    <p><span class="infoKey">前端：</span><span class="infoValue">jQuery、Bootstrap4、React、Electron</span>
+                    </p>
                     <p><span class="infoKey">后端：</span><span class="infoValue">Django、MySQL、Node.js</span></p>
-                    <p><span class="infoKey">其它：</span><span class="infoValue">Linux、matplotlib、BeautifulSoup4</span></p>
+                    <p><span class="infoKey">其它：</span><span class="infoValue">Linux、matplotlib、BeautifulSoup4</span>
+                    </p>
                 </div>
             </div>
             <div class="wechat infomation">
@@ -69,14 +80,69 @@
                 <div class="eductionExperence">
                     <h1>教育经历</h1>
                     <hr>
-                    <ul><li>宜春学院 - 环境科学专业（本科） 2017-2021</li></ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis asperiores eligendi, quisquam culpa omnis distinctio quae, ...</p>
-                    
+                    <div class="detailValue">
+                        <ul>
+                            <li>宜春学院 - 环境科学专业（本科） 2017-2021</li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis asperiores eligendi,
+                                quisquam culpa omnis distinctio quae, ...</p>
+                        </ul>
+                    </div>
                 </div>
-            </div>         
+                <div class="workExperence">
+                    <h1>工作经历</h1>
+                    <hr>
+                    <div class="detailValue">
+                        <ul>
+                            <li>无</li>
+                            <p></p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="myProject">
+                    <h1>个人项目</h1>
+                    <hr>
+                    <div class="detailValue">
+                        <ul>
+                            <li>个人博客</li>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi vero tempore
+                                distinctio explicabo. Sed et eos maxime corporis aspernatur velit cum quo sunt,
+                                obcaecati magni repellat facere voluptas dignissimos?</p>
+                            <li>W3标准文档翻译</li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio impedit, voluptate
+                                perspiciatis repellat facilis, at doloremque beatae molestias consequatur distinctio
+                                assumenda perferendis cupiditate quibusdam, molestiae dolores id esse? Corrupti,
+                                asperiores.</p>
+                            <li>基于HTML与CSS的简历</li>
+                            <p>这篇简历就是啦</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="award">
+                    <h1>技能证书</h1>
+                    <hr>
+                    <div class="detailValue">
+                        <ul>
+                            <li>CET-4</li>
+                            <li>CET-6</li>
+                            <li>计算机二级MS Office高级应用</li>
+                            <li>C1驾照</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="self-access">
+                    <h1>自我评价</h1>
+                    <hr>
+                    <div class="detailValue">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perferendis ratione magnam
+                            eveniet omnis voluptatem expedita alias voluptatibus neque cum eum labore odit iure modi
+                            sunt reprehenderit sequi impedit unde.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
 
 <!-- 
@@ -85,7 +151,7 @@
 
  -->
 
- <!-- 
+<!-- 
 avatar 头像
 .sider
     width: 290px;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text">
+        <input type="radio">
+        <input type="checkbox" name="" id="">
+        <input type="submit" value="submit">
+        <input type="button" value="btn">
+    </form>
+    <form action="" target="_blank">
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+
+</html>
+<!-- 
+    form is a coontainer.
+        <input type="radio" name="gender" id="other" value="other">
+        value="other"   value有什么作用？
+        提交给服务器处理的值，在使用radio类型时需要预先定义好，服务器脚本才可根据值处理
+        如果在其他类型的input中预先定义好，value的值会事先输入到选框中。
+        name="gender" 不可以忽略name属性，name属性用于后端提交数据的键值
+        id 与 label标签的for属性绑定
+
+    form的属性
+        action用于指定处理提交数据的脚本语言
+        target指定在哪显示提交后的返回信息
+        method指定使用HTTP的通信方式（get、post)
+            get使用url字符串给服务器传输数据大小限制 2048bit
+            post发送数据包与服务器通信
+        autocomplete指定是否记录账号类型，方便下次输入，下次输入时下方会出现提示，点击即可；
+        novalidate指不验证输入的数据格式
+ -->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <style>
+        #searchForm {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        #searchBtn {
+            margin-left: 15px;
+            display: inline;
+            border: none;
+            background-color: #4e6ef2;
+            cursor: pointer;
+            color: #ffffff;
+            width: 108px;
+            height: 44px;
+        }
+
+        #keyword {
+            height: 36px;
+        }
+
+        .keywordHint {
+            width: 150px;
+            height: 100px;
+            background-color: skyblue;
+            box-shadow: 1px 1px 1px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="searchForm">
+        <input type="text" placeholder="请输入需要搜索的关键字" name="keyword" id="keyword">
+        <input type="submit" value="搜索" id="searchBtn">
+    </form>
+    <div class="keywordHint" hidden></div>
+
+    <script>
+        var keywordNode = document.getElementById('keyword');
+        keywordNode.onchange = function () {
+            console.log('onchange');
+            console.log(keywordNode.value);
+        };
+        keywordNode.oninput = function () {
+            console.log('oninput');
+            console.log(keywordNode.value);
+        }
+        // console.log(keyword)
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    onchange和oninput的区别
+        change在输入框失去焦点时才触发；
+        input在每输入一个字符时就触发；
+
+    如何取到输入框的值?
+        node.value可获取输入框的值；
+        innerHTML，innerText，value，nodeValue四者有什么区别？
+            
+ -->

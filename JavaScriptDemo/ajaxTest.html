@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="responseText" id="responseText" cols="30" rows="10"></textarea>
+
+
+    <script>
+        function success(text) {
+            var textarea = document.getElementById('responseText');
+            textarea.value = text;
+            // console.log(textarea);
+        }
+
+        function fail(code) {
+            var textarea = document.getElementById('responseText');
+            textarea.value = 'Error Code:' + code;
+        }
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
+                    console.log(request.responseText);
+                    return success(request.responseText);
+                } else {
+                    return fail(request.status);
+                }
+            } else {
+                console.log("still requesting");
+            }
+        }
+        request.open('GET', '/JavaScriptDemo/ChangeAttribute.html');
+        request.send();
+        console.log('request has been sent,please wait.');
+    </script>
+</body>
+
+</html>
